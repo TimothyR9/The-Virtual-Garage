@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b2b">
+  <title>The Virtual Garage | Automotive Interior Repair & Upholstery</title>
+  <meta name="description" content="Automotive upholstery, interior repairs, restoration and handcrafted vehicle components in Goodwood, Cape Town.">
+  <meta property="og:title" content="The Virtual Garage">
+  <meta property="og:description" content="Automotive interior repair, upholstery and handcrafted components.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/images/tvg-logo.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    // Set this to your repository path if deploying to a project GitHub Pages URL.
+    // Example: window.TVG_BASE_PATH = "/the-virtual-garage";
+    window.TVG_BASE_PATH = "";
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div class="topline"><span>GOODWOOD · CAPE TOWN</span><span>MON–FRI 08:00–16:00</span></div>
+  <header class="site-header">
+    <a class="brand" href="#/home" aria-label="The Virtual Garage home"><img src="assets/images/tvg-logo.png" alt="The Virtual Garage Automotive Interior Repair"><span><b>THE VIRTUAL GARAGE</b><small>AUTOMOTIVE INTERIOR REPAIR</small></span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="main-nav">
+      <a href="#/home">Home</a><a href="#/products">Products</a><a href="#/bookings">Bookings</a><a href="#/gallery">Gallery</a><a href="#/about">About</a><a href="#/contact">Contact</a>
+      <a class="cart-link" href="#/cart">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+  <main id="app" tabindex="-1"><div class="loading">Loading The Virtual Garage…</div></main>
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div><img class="footer-logo" src="assets/images/tvg-logo.png" alt=""><p>Automotive upholstery, interior repairs and handcrafted components.</p></div>
+      <div><h3>Contact</h3><a href="tel:+27740648577">074 064 8577</a><a href="tel:+27651592779">065 159 2779</a><a href="mailto:thevirtualgarage20@gmail.com">thevirtualgarage20@gmail.com</a></div>
+      <div><h3>Visit us</h3><p>4 Marais Street, Goodwood<br>Cape Town, South Africa, 7460</p><p>Mon–Fri: 08:00–16:00</p></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> The Virtual Garage</span><span>Handcrafted with care in Cape Town</span></div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
